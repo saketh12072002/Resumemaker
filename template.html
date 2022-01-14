@@ -112,6 +112,7 @@
             font-weight: 400;
             margin-top: 6px;
         }
+
         .personal-info{
             font-size: 10px;
         }
@@ -146,6 +147,35 @@
             font-size: 9px;
             font-weight: 400;
             margin-top: 6px;
+        }
+
+
+        .all-skills{
+            text-align: left;
+        }
+        .main-skill-title{
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .all-skills-list{
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        .my-skill{
+            margin-top: 6px;
+            text-align: left;
+            color: #FFFFFF;
+            background-color: #3D59BD;
+            border-radius: 10px;
+            height: 16px;
+            padding: 2px 8px;
+            display: inline-block;
         }
 
     </style>
@@ -186,6 +216,7 @@
         </div>
     </div>
     <div class="right-body">
+
         <div class="personal-info">
         <div class="email">{{email}}</div>
         <div class="phone">{{phone}}</div></div>
@@ -286,11 +317,17 @@
                 {{/if}}
                 {{/each}}
                 </div>
-            </div></div>
+          </div></div>
+        
+        <div class="all-skills">
+            <div class="main-skill-title">Skills</div>
+            <ul class="all-skills-list">
+            {{#each skills}}
+                <li class="my-skill">{{this}}</li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+
   </body>
 </html>
-
-<script>
-    function myFunction() {
-      location.replace()
-    }
