@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        *{
+            font-family: "Poppins";
+            color: black;
+            text-align: justify;
+        }
+        .left-body{
+            width: 290px;
+            height: 777px;
+            display: inline-block;
+            position: fixed;
+        }
+        .right-body{
+            width: 240px;
+            height: 777px;
+            left: 340px;
+            display: inline-block;
+            position: fixed;
+        }
+        .name{
+            color: #3D59BD;
+            font-weight: 700;
+        }
+        .summary{
+            font-size: 10px;
+            width: 220px;
+            margin-top: 18px;
+        }
+        .education{
+            margin-top: 38px;
+        }
+        .education-title{
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -14px;
+        }
+        .major{
+            margin-top: 12px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .school{
+            font-size: 11px;
+            font-weight: 400;
+            color:#595959 ;
+        }
+        .time{
+            font-size: 8px;
+            font-weight: 400;
+            color:#595959 ;
+            text-transform: capitalize;
+        }
+        .score{
+            font-size: 10px;
+            font-weight: 400;
+            color:#595959 ;
+            margin-top: 0;
+        }
+        .experience{
+            margin-top: 38px;
+        }
+        .experience-title{
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -20px;
+        }
+        .job-title{
+            margin-top: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .company{
+            font-size: 11px;
+            font-weight: 400;
+            color:#595959;
+            margin-top: 0;
+        }
+        .skill-title{
+            font-size: 8px;
+            font-weight: 400;
+            color:#595959;
+            margin-top: 4px;
+        }
+        .skill-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: -8px;
+        }
+        .skill::before{
+            content: "\2746";
+            color:#3D59BD;
+            font-size: 8px;
+            margin-right: 5px;
+        }
+        .skill{
+            font-size: 8px;
+            font-weight: 400;
+            display: inline-block;
+        }
+        .job-description{
+            font-size: 9px;
+            font-weight: 400;
+            margin-top: 6px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="left-body">
+        <div class="name">{{name}}</div>
+        <div class="summary">{{summary}}</div>
+        <div class="education">
+            <div class="education-title">Education</div>
+            {{#each education}}
+            <div class="edu-item">
+                <div class="major">{{this.title}}</div>
+                <div class="school">{{this.institution}}</div>
+                <div class="time">{{this.start}} - {{this.end}}</div>
+                <div class="score">{{this.score}}</div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="experience">
+            <div class="experience-title">Experience</div>
+            {{#each experience}}
+            <div class="job-item">
+                <div class="job-title">{{this.title}}</div>
+                <div class="company">{{this.workplace}}</div>
+                <div class="time">{{this.start}} - {{this.end}}</div>
+                <div class="skills">
+                    <div class="skill-title">Skills & Tools</div>
+                    <ul class="skill-list">
+                    {{#each this.skills}}
+                        <li class="skill">{{this}}</li>
+                    {{/each}}
+                    </ul>
+                </div>
+                <div class="job-description">{{this.description}}</div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="right-body">
+        hi
+    </div>
+  </body>
+</html>

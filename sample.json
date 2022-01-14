@@ -1,0 +1,118 @@
+{
+    "name": "Sudip Mondal",
+    "summary": "Hi! I’m a software developer, exploring different fields of DevOps and try to contribute to open source.",
+    "email": "ce20b112@smail.iitm.ac.in",
+    "phone": "+91 9126865452",
+    "github": "https://github.com/sudip-mondal-2002",
+    "linkedin": "https://www.linkedin.com/in/sudip-mondal-374a12201/",
+    "education": [
+        {
+            "title": "B.Tech Civil Engineering",
+            "institution": "Indian Institute of Technology, Madras",
+            "start": "nov,2020",
+            "end": "present",
+            "score": "3.5/4.0"
+        },
+        {
+            "title": "Senior Secondary",
+            "institution": "R.K.M Vidyapith Deoghar",
+            "start": "jun,2018",
+            "end": "mar,2020",
+            "score": "1.5/4.0"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Web Developer",
+            "workplace": "Logistics and Innovation Lab, IIT Madras",
+            "start": "aug,2021",
+            "end": "present",
+            "skills": [
+                "Web Development",
+                "ReactJs",
+                "Figma"
+            ],
+            "description": "Logistics labs ideates new algorithm and techniques to make the transportation of goods easier. I‘ve created the frontend interfaces as well as worked on integrating the backend to the frontend."
+        },
+        {
+            "title": "Frontend Developer",
+            "workplace": "Prescribe",
+            "start": "nov,2021",
+            "end": "jan,2022",
+            "skills": [
+                "App Development",
+                "Web Development",
+                "React Native"
+            ],
+            "description": "Implemented figma designs on a react native project.Created a styled PDF generator which collects the data from and send as PDF as styled in the figma file."
+        },
+        {
+            "title": "App Developer",
+            "workplace": "Resonect",
+            "start": "jun,2021",
+            "end": "sep,2021",
+            "skills": [
+                "AngularJs",
+                "Ionic",
+                "Figma"
+            ],
+            "description": "Implemented Figma designs to the Resonect app. Also worked on the backend integration for the app."
+        }
+    ],
+    "projects": [
+        {
+            "title": "MonsterMaker",
+            "start": "mar,2020",
+            "end": "present",
+            "skills": [
+                "Game Design",
+                "Figma",
+                "Flutter",
+                "Firebase",
+                "Cloud Firestore"
+            ],
+            "description": "MonsterMaker is a collaborative drawing game where players draw “monsters” together. I designed it in Figma, built it with Flutter and Firebase, and released the game on the Appstore and Google Play. I’m currently working on a big redesign and new features.",
+            "links": {
+                "github": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
+                "figma": "https://www.figma.com/file/elD7lNvkKL4nENQnzPK0X7/MonsterMaker?node-id=0%3A1",
+                "document": null,
+                "video": null,
+                "website": null,
+                "play store": null,
+                "app store": null
+            }
+        },
+        {
+            "title": "Interactive Polaroids",
+            "start": "feb,2020",
+            "end": "mar,2021",
+            "skills": [
+                "Interaction Design",
+                "Tangible Interface Design",
+                "User Research",
+                "Raspberry Pi",
+                "Python"
+            ],
+            "description": "In a course about Tangible Interactions, I was part of a group that designed and built a novel new way to interact with personal photos. By strengthening the engagement with personal photos, we aimed to provide a rich emotional experience. The project included extensive ideation, user research, focus groups and  prototyping. We received the highest grade in the course.",
+            "links": {
+                "github": null,
+                "figma": null,
+                "document": "https://drive.google.com/file/d/1c6mUFhkVJ-tu0J-9j2XV7tWilFU1sCk6/view",
+                "video": "https://youtu.be/Vd1cYAiclKA",
+                "website": null,
+                "play store": null,
+                "app store": null
+            }
+        }
+    ],
+    "skills": [
+        "Interaction Design",
+        "UX Deisgn",
+        "Presentation",
+        "Software Design",
+        "Figma",
+        "Flutter",
+        "SwiftUI",
+        "Firebase"
+    ]
+}
