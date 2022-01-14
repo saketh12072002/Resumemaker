@@ -30,19 +30,19 @@
         .summary{
             font-size: 10px;
             width: 220px;
-            margin-top: 18px;
+            margin-top: 5px;
         }
         .education{
-            margin-top: 38px;
+            margin-top: 5px;
         }
         .education-title{
             font-size: 20px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: -14px;
+            margin-bottom: -10px;
         }
         .major{
-            margin-top: 12px;
+            margin-top: 8px;
             font-size: 13px;
             font-weight: 600;
         }
@@ -64,16 +64,16 @@
             margin-top: 0;
         }
         .experience{
-            margin-top: 38px;
+            margin-top: 5px;
         }
         .experience-title{
             font-size: 20px;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: -20px;
+            margin-bottom: -10px;
         }
         .job-title{
-            margin-top: 20px;
+            margin-top: 8px;
             font-size: 13px;
             font-weight: 600;
             margin-bottom: 0;
@@ -117,7 +117,7 @@
             font-size: 10px;
         }
         .projects{
-            margin-top: 90px;
+            margin-top: 50px;
             position: relative;
         }
         .project{
@@ -152,6 +152,7 @@
 
         .all-skills{
             text-align: left;
+            margin-top: 10px;
         }
         .main-skill-title{
             text-align: left;
@@ -213,6 +214,14 @@
                 <div class="job-description">{{this.description}}</div>
             </div>
             {{/each}}
+        </div>
+        <div class="all-skills">
+            <div class="main-skill-title">Skills</div>
+            <ul class="all-skills-list">
+            {{#each skills}}
+                <li class="my-skill">{{this}}</li>
+            {{/each}}
+            </ul>
         </div>
     </div>
     <div class="right-body">
@@ -318,15 +327,6 @@
                 {{/each}}
                 </div>
           </div></div>
-        
-        <div class="all-skills">
-            <div class="main-skill-title">Skills</div>
-            <ul class="all-skills-list">
-            {{#each skills}}
-                <li class="my-skill">{{this}}</li>
-            {{/each}}
-            </ul>
-        </div>
     </div>
 
   </body>
