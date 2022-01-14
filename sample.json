@@ -69,9 +69,7 @@
             "skills": [
                 "Game Design",
                 "Figma",
-                "Flutter",
-                "Firebase",
-                "Cloud Firestore"
+                "Flutter"
             ],
             "description": "MonsterMaker is a collaborative drawing game where players draw “monsters” together. I designed it in Figma, built it with Flutter and Firebase, and released the game on the Appstore and Google Play. I’m currently working on a big redesign and new features.",
             "links": {
@@ -80,8 +78,8 @@
                 "document": null,
                 "video": null,
                 "website": null,
-                "play store": null,
-                "app store": null
+                "playstore": null,
+                "appstore": null
             }
         },
         {
@@ -90,10 +88,8 @@
             "end": "mar,2021",
             "skills": [
                 "Interaction Design",
-                "Tangible Interface Design",
-                "User Research",
-                "Raspberry Pi",
-                "Python"
+                "Python",
+                "User Research"
             ],
             "description": "In a course about Tangible Interactions, I was part of a group that designed and built a novel new way to interact with personal photos. By strengthening the engagement with personal photos, we aimed to provide a rich emotional experience. The project included extensive ideation, user research, focus groups and  prototyping. We received the highest grade in the course.",
             "links": {
@@ -102,8 +98,8 @@
                 "document": "https://drive.google.com/file/d/1c6mUFhkVJ-tu0J-9j2XV7tWilFU1sCk6/view",
                 "video": "https://youtu.be/Vd1cYAiclKA",
                 "website": null,
-                "play store": null,
-                "app store": null
+                "playstore": null,
+                "appstore": null
             }
         }
     ],
