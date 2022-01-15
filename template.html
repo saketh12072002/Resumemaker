@@ -132,7 +132,6 @@
         .job-description {
             font-size: 9px;
             font-weight: 400;
-            margin-top: 6px;
         }
 
         .personal-info {
@@ -174,7 +173,6 @@
         .project-desc {
             font-size: 9px;
             font-weight: 400;
-            margin-top: 6px;
         }
 
 
@@ -209,6 +207,58 @@
             padding: 2px 8px;
             display: inline-block;
         }
+
+        .accomplishments-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+        }
+
+        .accomplishment-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .accomplishment {
+            line-height: 14px;
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .accomplishment::before {
+            content: "\2746";
+            color: #3D59BD;
+            font-size: 8px;
+            margin-right: 5px;
+        }
+        .por-title{
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+            margin-top: 4px;
+        }
+        .por-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+        }
+        .por-head{
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .por-desc{
+            font-size: 9px;
+            font-weight: 400;
+            margin-top: 2px;
+            margin-bottom: 6px;
+            line-height: 12px;
+        }
+    
     </style>
 </head>
 
@@ -485,9 +535,29 @@
                     </svg></a>
                 {{/if}}
                 {{/each}}
-                </>
+            </div>
+            <div>
+                <div class="accomplishments-title">Accomplishments</div>
+                <ul class="accomplishment-list">
+                    {{#each accomplishments}}
+                    <li class="accomplishment">{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div>
+                <div class="por-title">Volunteer</div>
+                <ul class="por-list">
+                    {{#each por}}
+                    <li class="por-item">
+                        <div class="por-head">{{this.title}}</div>
+                        <div class="time">{{this.start}} - {{this.end}}</div>
+                        <p class="por-desc">{{this.description}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
             </div>
         </div>
+    </div>
 
 </body>
 
