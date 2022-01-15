@@ -9,6 +9,7 @@
   "author": "Sudip Mondal",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "html-pdf": "^3.0.1",
     "pdf-creator-node": "^2.2.4"

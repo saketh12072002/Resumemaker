@@ -1,8 +1,10 @@
 const express = require('express');
 const pdf = require("pdf-creator-node");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
+app.use(cors())
 
 const fs = require("fs");
 app.post("/resume", (req, res) => {
@@ -34,4 +36,4 @@ app.post("/resume", (req, res) => {
             res.status(400).send(error);
         });
 })
-app.listen(3000, () => console.log('Server started on port 3000'));
+app.listen(process.env.PORT || 3000, () => console.log('Server started on port 3000'));
