@@ -112,5 +112,27 @@
         "Flutter",
         "SwiftUI",
         "Firebase"
+    ],
+    "accomplishments":[
+        "Finalist, Pravega Hackathon, 2021, organised by IISc, Bangalore",
+        "Finalist, Reverse Coding, 2021, organised by Shaastra, IIT Madras, Chennai",
+        "Finalist, Reverse Coding, 2022, organised by Shaastra, IIT Madras, Chennai",
+        "Finalist, LogicX, 2021, organised by Shaastra, IIT Madras, Chennai",
+        "Finalist, LogicX, 2022, organised by Shaastra, IIT Madras, Chennai",
+        "Participant, SpaceApps challenge, 2021, organised by NASA, Houston, Texas"
+    ],
+    "por":[
+        {
+            "title": "Core member, SOC, IIT Madras",
+            "description": "I am a core member of the Sports organizing Committee, IIT Madras. I am responsible for organizing events, conducting workshops, and mentoring students.",
+            "start": "feb,2020",
+            "end": "mar,2021"
+        },
+        {
+            "title": "GitHub Campus Expert",
+            "description": "I am a GitHub Campus Expert. I am responsible for building and maintaining the GitHub Campus, and for providing technical guidance to students.",
+            "start": "feb,2020",
+            "end": "present"
+        }
     ]
 }
