@@ -7,8 +7,8 @@ app.use(express.json());
 app.use(cors())
 
 const fs = require("fs");
-app.get("/",(req,res)=>{
-    res.json({server:true});
+app.get("/", (req, res) => {
+    res.json({ server: true });
 })
 app.post("/resume", (req, res) => {
     const { data, template } = req.body;
@@ -16,7 +16,7 @@ app.post("/resume", (req, res) => {
 
     var options = {
         format: "A4",
-        border: "14px",
+        border: "0px",
         orientation: "portrait",
 
     };

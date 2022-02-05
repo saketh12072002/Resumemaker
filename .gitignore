@@ -1,5 +1,6 @@
 # Output
 *.pdf
+index.js
 
 ### Node ###
 # Logs

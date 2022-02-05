@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <style>
+
+        * {
+            font-family: "Times New Roman", Times, serif;;
+            color: black;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        .name {
+            font-weight: 700;
+            background-color: aqua;
+        }
+
+        .summary {
+            font-size: 10px;
+            border-radius: 20px;
+            background-color: #595959;
+            padding: 12px;
+        }
+
+        .education {
+            margin-top: 5px;
+        }
+
+        .education-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+        }
+
+        .major {
+            margin-top: 8px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .school {
+            font-size: 11px;
+            font-weight: 400;
+            color: #595959;
+        }
+
+        .time {
+            font-size: 8px;
+            font-weight: 400;
+            color: #595959;
+            text-transform: capitalize;
+        }
+
+        .score {
+            font-size: 10px;
+            font-weight: 400;
+            color: #595959;
+            margin-top: 0;
+        }
+
+        .experience {
+            margin-top: 5px;
+        }
+
+        .experience-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+        }
+
+        .job-title {
+            margin-top: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .company {
+            font-size: 11px;
+            font-weight: 400;
+            color: #595959;
+            margin-top: 0;
+        }
+
+        .skill-title {
+            font-size: 8px;
+            font-weight: 400;
+            color: #595959;
+            margin-top: 4px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: -8px;
+        }
+
+        .skill::before {
+            content: "\2746";
+            color: #3D59BD;
+            font-size: 8px;
+            margin-right: 5px;
+        }
+
+        .skill {
+            font-size: 8px;
+            font-weight: 400;
+            display: inline-block;
+        }
+
+        .job-description {
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .personal-info {
+            font-size: 10px;
+            text-align: right;
+        }
+
+        .projects {
+            margin-top: 5px;
+        }
+
+        .project {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -2px;
+        }
+
+        .project-title {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .project-time {
+            font-size: 8px;
+            font-weight: 400;
+            color: #595959;
+            text-transform: capitalize;
+        }
+
+        .skillsntools {
+            font-size: 8px;
+            font-weight: 400;
+            color: #595959;
+            margin-top: 5px;
+        }
+
+        .project-desc {
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+
+        .all-skills {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .main-skill-title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .all-skills-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .my-skill {
+            margin-top: 6px;
+            text-align: left;
+            color: #FFFFFF;
+            background-color: #3D59BD;
+            border-radius: 10px;
+            height: 16px;
+            padding: 2px 8px;
+            display: inline-block;
+        }
+
+        .accomplishments-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+        }
+
+        .accomplishment-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .accomplishment {
+            line-height: 14px;
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .accomplishment::before {
+            content: "\2746";
+            color: #3D59BD;
+            font-size: 8px;
+            margin-right: 5px;
+        }
+        .por-title{
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: -10px;
+            margin-top: 4px;
+        }
+        .por-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+        }
+        .por-head{
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .por-desc{
+            font-size: 9px;
+            font-weight: 400;
+            margin-top: 2px;
+            margin-bottom: 6px;
+            line-height: 12px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+        <div class="name">{{name}}</div>
+        <div class="personal-info">
+            <div class="email">{{email}}</div>
+            <div class="phone">{{phone}}</div>
+        </div>
+        {{#if this.github}}
+        <a class="github" href={{this.github}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" data-name="Layer 1" viewBox="0 0 24 24">
+                <path
+                    d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" />
+            </svg>
+
+        </a>
+        {{/if}}
+        {{#if this.linkedin}}
+        <a class="linkedin" href={{this.linkedin}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" data-name="Layer 1" viewBox="0 0 24 24">
+                <path
+                    d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z" />
+            </svg>
+        </a>
+        {{/if}}
+        {{#if this.twitter}}
+        <a class="twitter" href={{this.twitter}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" data-name="Layer 1" viewBox="0 0 24 24">
+                <path
+                    d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z" />
+            </svg>
+        </a>
+        {{/if}}
+        {{#if this.website}}
+        <a class="website" href={{this.website}}>
+            <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" height="14" width="14" viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30ZM16,4A12,12,0,1,0,28,16,12,12,0,0,0,16,4Z" />
+                <path d="M16,30a1,1,0,0,1-1-1V3a1,1,0,0,1,2,0V29A1,1,0,0,1,16,30Z" />
+                <path d="M23,17a1,1,0,0,1-1-1c0-6.5-2.75-12-6-12a1,1,0,0,1,0-2c4.49,0,8,6.15,8,14A1,1,0,0,1,23,17Z" />
+                <path d="M16,30a1,1,0,0,1,0-2c3.25,0,6-5.5,6-12a1,1,0,0,1,2,0C24,23.85,20.49,30,16,30Z" />
+                <path d="M9,17a1,1,0,0,1-1-1C8,8.15,11.51,2,16,2a1,1,0,0,1,0,2c-3.25,0-6,5.5-6,12A1,1,0,0,1,9,17Z" />
+                <path d="M16,30c-4.49,0-8-6.15-8-14a1,1,0,0,1,2,0c0,6.5,2.75,12,6,12a1,1,0,0,1,0,2Z" />
+                <path d="M29,17H3a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2Z" />
+                <path d="M27,11H5A1,1,0,0,1,5,9H27a1,1,0,0,1,0,2Z" />
+                <path d="M27,23H5a1,1,0,0,1,0-2H27a1,1,0,0,1,0,2Z" />
+            </svg>
+        </a>
+        <div class="summary">{{summary}}</div>
+
+        <div class="projects">
+            <div class="project">PROJECTS</div>
+            {{#each projects}}
+            <div class="pro-item">
+                <div class="project-title">{{this.title}}</div>
+                <div class="project-time">{{this.start}} - {{this.end}}</div>
+            </div>
+            <div class="skillsntools">Skills & Tools</div>
+            <ul class="skill-list">
+                {{#each this.skills}}
+                <li class="skill">{{this}}</li>
+                {{/each}}
+            </ul>
+            <div class="project-desc">{{this.description}}</div>
+            <div class="pro-links">
+
+                {{#if this.links.github}}
+                <a class="github" href={{this.links.github}}><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_170_4792)">
+                            <path
+                                d="M9.33335 12.8333V10.5758C9.35524 10.2977 9.31766 10.0181 9.22311 9.75554C9.12857 9.49304 8.97923 9.25366 8.78502 9.05333C10.6167 8.84917 12.5417 8.155 12.5417 4.97C12.5415 4.15556 12.2283 3.37236 11.6667 2.7825C11.9326 2.06996 11.9138 1.28237 11.6142 0.583333C11.6142 0.583333 10.9259 0.379166 9.33335 1.44667C7.99636 1.08431 6.58702 1.08431 5.25002 1.44667C3.65752 0.379166 2.96919 0.583333 2.96919 0.583333C2.66957 1.28237 2.65077 2.06996 2.91669 2.7825C2.35093 3.37674 2.03733 4.16702 2.04169 4.9875C2.04169 8.14917 3.96669 8.84333 5.79835 9.07083C5.60644 9.26915 5.45842 9.50565 5.36395 9.76495C5.26948 10.0243 5.23066 10.3005 5.25002 10.5758V12.8333M5.25002 11.0833C2.33335 11.9583 2.33335 9.625 1.16669 9.33333L5.25002 11.0833Z"
+                                stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_170_4792">
+                                <rect width="14" height="14" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg></a>
+                {{/if}}
+
+                {{#if this.links.figma}}
+                <a class="figma" href={{this.links.figma}}><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.91669 3.20833C2.91669 2.66685 3.13179 2.14755 3.51468 1.76466C3.89756 1.38177 4.41687 1.16667 4.95835 1.16667H7.00002V5.25H4.95835C4.41687 5.25 3.89756 5.0349 3.51468 4.65201C3.13179 4.26912 2.91669 3.74982 2.91669 3.20833Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 1.16667H9.04167C9.30978 1.16667 9.57527 1.21948 9.82298 1.32208C10.0707 1.42468 10.2958 1.57507 10.4853 1.76466C10.6749 1.95424 10.8253 2.17932 10.9279 2.42702C11.0305 2.67473 11.0833 2.94022 11.0833 3.20833C11.0833 3.47645 11.0305 3.74194 10.9279 3.98965C10.8253 4.23735 10.6749 4.46242 10.4853 4.65201C10.2958 4.8416 10.0707 4.99199 9.82298 5.09459C9.57527 5.19719 9.30978 5.25 9.04167 5.25H7V1.16667Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 7.29167C7 7.02355 7.05281 6.75806 7.15541 6.51035C7.25802 6.26265 7.4084 6.03758 7.59799 5.84799C7.78758 5.6584 8.01265 5.50802 8.26035 5.40541C8.50806 5.30281 8.77355 5.25 9.04167 5.25C9.30978 5.25 9.57527 5.30281 9.82298 5.40541C10.0707 5.50802 10.2958 5.6584 10.4853 5.84799C10.6749 6.03758 10.8253 6.26265 10.9279 6.51035C11.0305 6.75806 11.0833 7.02355 11.0833 7.29167C11.0833 7.55978 11.0305 7.82527 10.9279 8.07298C10.8253 8.32069 10.6749 8.54576 10.4853 8.73534C10.2958 8.92493 10.0707 9.07532 9.82298 9.17792C9.57527 9.28052 9.30978 9.33333 9.04167 9.33333C8.77355 9.33333 8.50806 9.28052 8.26035 9.17792C8.01265 9.07532 7.78758 8.92493 7.59799 8.73534C7.4084 8.54576 7.25802 8.32069 7.15541 8.07298C7.05281 7.82527 7 7.55978 7 7.29167V7.29167Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2.91669 11.375C2.91669 10.8335 3.13179 10.3142 3.51468 9.93133C3.89756 9.54844 4.41687 9.33334 4.95835 9.33334H7.00002V11.375C7.00002 11.9165 6.78492 12.4358 6.40203 12.8187C6.01914 13.2016 5.49984 13.4167 4.95835 13.4167C4.41687 13.4167 3.89756 13.2016 3.51468 12.8187C3.13179 12.4358 2.91669 11.9165 2.91669 11.375Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2.91669 7.29167C2.91669 6.75018 3.13179 6.23088 3.51468 5.84799C3.89756 5.4651 4.41687 5.25 4.95835 5.25H7.00002V9.33333H4.95835C4.41687 9.33333 3.89756 9.11823 3.51468 8.73534C3.13179 8.35246 2.91669 7.83315 2.91669 7.29167Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                {{/if}}
+                {{#if this.links.document}}
+                <a class="document" href={{this.links.document}}><svg width="14" height="14" viewBox="0 0 14 14"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.16665 1.16667H3.49998C3.19056 1.16667 2.89381 1.28959 2.67502 1.50838C2.45623 1.72717 2.33331 2.02392 2.33331 2.33334V11.6667C2.33331 11.9761 2.45623 12.2728 2.67502 12.4916C2.89381 12.7104 3.19056 12.8333 3.49998 12.8333H10.5C10.8094 12.8333 11.1061 12.7104 11.3249 12.4916C11.5437 12.2728 11.6666 11.9761 11.6666 11.6667V4.66667L8.16665 1.16667Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8.16669 1.16667V4.66667H11.6667" stroke="black" stroke-width="1.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.33335 7.58333H4.66669" stroke="black" stroke-width="1.16667" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.33335 9.91667H4.66669" stroke="black" stroke-width="1.16667" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5.83335 5.25H5.25002H4.66669" stroke="black" stroke-width="1.16667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                {{/if}}
+                {{#if this.links.video}}
+                <a class="video" href={{this.links.video}}><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.1484 3.74499C13.0791 3.46815 12.938 3.2145 12.7393 3.00965C12.5406 2.8048 12.2913 2.65602 12.0167 2.57833C11.0134 2.33333 7.00007 2.33333 7.00007 2.33333C7.00007 2.33333 2.98674 2.33333 1.9834 2.60166C1.7088 2.67935 1.45956 2.82814 1.26085 3.03298C1.06215 3.23783 0.921029 3.49148 0.851736 3.76833C0.668111 4.78657 0.57829 5.81951 0.583402 6.85416C0.576857 7.8966 0.666683 8.93742 0.851736 9.96333C0.928129 10.2316 1.07241 10.4756 1.27065 10.6718C1.46889 10.868 1.71438 11.0097 1.9834 11.0833C2.98674 11.3517 7.00007 11.3517 7.00007 11.3517C7.00007 11.3517 11.0134 11.3517 12.0167 11.0833C12.2913 11.0056 12.5406 10.8569 12.7393 10.652C12.938 10.4472 13.0791 10.1935 13.1484 9.91666C13.3306 8.90609 13.4204 7.88102 13.4167 6.85416C13.4233 5.81172 13.3335 4.7709 13.1484 3.74499Z"
+                            stroke="black" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.6875 8.76167L9.04167 6.85417L5.6875 4.94667V8.76167Z" stroke="black"
+                            stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                {{/if}}
+                {{#if this.links.website}}
+                <a class="website" href={{this.links.website}}>
+                    <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" height="14" width="14"
+                        viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30ZM16,4A12,12,0,1,0,28,16,12,12,0,0,0,16,4Z" />
+                        <path d="M16,30a1,1,0,0,1-1-1V3a1,1,0,0,1,2,0V29A1,1,0,0,1,16,30Z" />
+                        <path
+                            d="M23,17a1,1,0,0,1-1-1c0-6.5-2.75-12-6-12a1,1,0,0,1,0-2c4.49,0,8,6.15,8,14A1,1,0,0,1,23,17Z" />
+                        <path d="M16,30a1,1,0,0,1,0-2c3.25,0,6-5.5,6-12a1,1,0,0,1,2,0C24,23.85,20.49,30,16,30Z" />
+                        <path
+                            d="M9,17a1,1,0,0,1-1-1C8,8.15,11.51,2,16,2a1,1,0,0,1,0,2c-3.25,0-6,5.5-6,12A1,1,0,0,1,9,17Z" />
+                        <path d="M16,30c-4.49,0-8-6.15-8-14a1,1,0,0,1,2,0c0,6.5,2.75,12,6,12a1,1,0,0,1,0,2Z" />
+                        <path d="M29,17H3a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2Z" />
+                        <path d="M27,11H5A1,1,0,0,1,5,9H27a1,1,0,0,1,0,2Z" />
+                        <path d="M27,23H5a1,1,0,0,1,0-2H27a1,1,0,0,1,0,2Z" />
+                    </svg>
+                </a>
+                {{/if}}
+                {{#if this.links.playstore}}
+                <a class="playstore" href={{this.links.playstore}}><svg xmlns="http://www.w3.org/2000/svg" height="14"
+                        width="14" id="svg60" version="1.1" viewBox="-4.12599 -7.65905 35.75858 45.9543">
+                        <defs id="defs38">
+                            <linearGradient gradientUnits="userSpaceOnUse" y2="21.86" x2="-5.9" y1="1.87" x1="14.09"
+                                id="linear-gradient">
+                                <stop id="stop4" stop-color="#008eff" offset="0" />
+                                <stop id="stop6" stop-color="#008fff" offset=".01" />
+                                <stop id="stop8" stop-color="#00acff" offset=".26" />
+                                <stop id="stop10" stop-color="#00c0ff" offset=".51" />
+                                <stop id="stop12" stop-color="#00cdff" offset=".76" />
+                                <stop id="stop14" stop-color="#00d1ff" offset="1" />
+                            </linearGradient>
+                            <linearGradient gradientUnits="userSpaceOnUse" y2="15.32" x2="-2.37" y1="15.32" x1="26.45"
+                                id="linear-gradient-2">
+                                <stop id="stop17" stop-color="#ffd800" offset="0" />
+                                <stop id="stop19" stop-color="#ff8a00" offset="1" />
+                            </linearGradient>
+                            <linearGradient gradientUnits="userSpaceOnUse" y2="45.15" x2="-9.41" y1="18.05" x1="17.69"
+                                id="linear-gradient-3">
+                                <stop id="stop22" stop-color="#ff3a44" offset="0" />
+                                <stop id="stop24" stop-color="#b11162" offset="1" />
+                            </linearGradient>
+                            <linearGradient gradientUnits="userSpaceOnUse" y2="3.81" x2="8.92" y1="-8.29" x1="-3.19"
+                                id="linear-gradient-4">
+                                <stop id="stop27" stop-color="#328e71" offset="0" />
+                                <stop id="stop29" stop-color="#2d9571" offset=".07" />
+                                <stop id="stop31" stop-color="#15bd74" offset=".48" />
+                                <stop id="stop33" stop-color="#06d575" offset=".8" />
+                                <stop id="stop35" stop-color="#00de76" offset="1" />
+                            </linearGradient>
+                            <style id="style2">
+                                .cls-7 {
+                                    opacity: .07
+                                }
+                            </style>
+                        </defs>
+                        <g transform="translate(.004)" id="g58">
+                            <g id="g56">
+                                <path id="path40"
+                                    d="M.55.48A2.39 2.39 0 000 2.15v26.34a2.41 2.41 0 00.55 1.67l.09.09 14.75-14.76v-.35L.64.39z"
+                                    fill="url(#linear-gradient)" />
+                                <path id="path42"
+                                    d="M20.31 20.41l-4.92-4.92v-.35l4.92-4.91.11.06 5.83 3.31c1.67.94 1.67 2.49 0 3.44l-5.83 3.31z"
+                                    fill="url(#linear-gradient-2)" />
+                                <path id="path44" d="M20.42 20.35l-5-5L.55 30.16a2 2 0 002.45.07l17.39-9.88"
+                                    fill="url(#linear-gradient-3)" />
+                                <path id="path46" d="M20.42 10.29L3 .4A1.93 1.93 0 00.55.48l14.84 14.84z"
+                                    fill="url(#linear-gradient-4)" />
+                                <path id="path48"
+                                    d="M20.31 20.24L3 30.06a2 2 0 01-2.39 0l-.09.09.09.09a2 2 0 002.39 0l17.39-9.88z"
+                                    opacity=".1" />
+                                <path id="path50" d="M.55 30A2.43 2.43 0 010 28.32v.17a2.41 2.41 0 00.55 1.67l.09-.09z"
+                                    class="cls-7" />
+                                <path id="path52"
+                                    d="M26.25 16.86l-5.94 3.38.11.11L26.25 17a2.11 2.11 0 001.25-1.72 2.21 2.21 0 01-1.25 1.58z"
+                                    class="cls-7" />
+                                <path id="path54"
+                                    d="M3 .58l23.25 13.19a2.2 2.2 0 011.25 1.55 2.09 2.09 0 00-1.25-1.72L3 .4C1.36-.54 0 .24 0 2.15v.17C0 .42 1.36-.37 3 .58z"
+                                    fill="#fff" opacity=".3" />
+                            </g>
+                        </g>
+                    </svg></a>
+                {{/if}}
+                {{#if this.links.appstore}}
+                <a class="appstore" href={{this.links.appstore}}><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 80"
+                        enable-background="new 0 0 64 64" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M49.4,34c-0.1-8.1,6.6-12,6.9-12.2c-3.8-5.5-9.7-6.3-11.7-6.3c-4.9-0.5-9.7,3-12.2,3c-2.6,0-6.4-2.9-10.6-2.8
+                                c-5.4,0.1-10.4,3.2-13.1,8c-5.7,9.8-1.4,24.3,4,32.3c2.7,3.9,5.9,8.2,10.1,8.1c4.1-0.2,5.6-2.6,10.5-2.6c4.9,0,6.3,2.6,10.5,2.5
+                                c4.4-0.1,7.1-3.9,9.7-7.8c3.1-4.5,4.4-8.9,4.5-9.1C57.9,46.9,49.5,43.7,49.4,34z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M41.4,10.3c2.2-2.7,3.7-6.5,3.3-10.3c-3.2,0.1-7.1,2.2-9.4,4.9c-2,2.4-3.8,6.2-3.4,9.9C35.5,15,39.1,13,41.4,10.3z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg></a>
+                {{/if}}
+                {{/each}}
+        </div>
+
+
+        <div class="experience">
+            <div class="experience-title">Experience</div>
+            {{#each experience}}
+            <div class="job-item">
+                <div class="job-title">{{this.title}}</div>
+                <div class="company">{{this.workplace}}</div>
+                <div class="time">{{this.start}} - {{this.end}}</div>
+                <div class="skills">
+                    <div class="skill-title">Skills & Tools</div>
+                    <ul class="skill-list">
+                        {{#each this.skills}}
+                        <li class="skill">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="job-description">{{this.description}}</div>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="all-skills">
+            <div class="main-skill-title">Skills</div>
+            <ul class="all-skills-list">
+                {{#each skills}}
+                <li class="my-skill">{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="education">
+        <div class="education-title">Education</div>
+            {{#each education}}
+            <div class="edu-item">
+                <div class="major">{{this.title}}</div>
+                <div class="school">{{this.institution}}</div>
+                <div class="time">{{this.start}} - {{this.end}}</div>
+                <div class="score">{{this.score}}</div>
+            </div>
+            {{/each}}
+        </div>       
+        {{/if}}
+            <div>
+                <div class="accomplishments-title">Accomplishments</div>
+                <ul class="accomplishment-list">
+                    {{#each accomplishments}}
+                    <li class="accomplishment">{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div>
+                <div class="por-title">Volunteer</div>
+                <ul class="por-list">
+                    {{#each por}}
+                    <li class="por-item">
+                        <div class="por-head">{{this.title}}</div>
+                        <div class="time">{{this.start}} - {{this.end}}</div>
+                        <p class="por-desc">{{this.description}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>
