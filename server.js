@@ -7,11 +7,12 @@ app.use(express.json());
 app.use(cors())
 
 const fs = require("fs");
-app.get("/",(req,res)=>{
-    res.json({server:true});
+app.get("/", (req, res) => {
+    res.json({ server: true });
 })
 app.post("/resume", (req, res) => {
     const { data, template } = req.body;
+    console.log(template);
     var html = fs.readFileSync(__dirname + `/template${template}.html`, "utf8");
 
     var options = {

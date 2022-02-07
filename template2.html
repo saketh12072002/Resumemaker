@@ -14,28 +14,28 @@
         }
         
         .left-body {
-            width: 290px;
+            width: 50%;
             height: 777px;
             display: inline-block;
             position: fixed;
         }
         
         .right-body {
-            width: 240px;
+            width: 50%;
             height: 777px;
-            left: 320px;
+            left: 620px;
             display: inline-block;
             position: fixed;
         }
         
         .name {
-            color: #3D59BD;
+            font-size: 32px;
             font-weight: 700;
         }
         
         .summary {
+            width: 50rem;
             font-size: 10px;
-            width: 220px;
             margin-top: 5px;
         }
         
@@ -260,13 +260,21 @@
             margin-bottom: 6px;
             line-height: 12px;
         }
+        
+        .grid-child-element {
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
+    <div>
+        <div class="name grid-child-element">{{name}}</div>
+        <div class="summary grid-child-element">{{summary}}</div>
+    </div>
+
     <div class="left-body">
-        <div class="name">{{name}}</div>
-        <div class="summary">{{summary}}</div>
+
         <div class="education">
             <div class="education-title">Education</div>
             {{#each education}}
@@ -544,3 +552,17 @@
 </body>
 
 </html>
+
+<!-- 
+<hr class="perpendicular-line">
+
+.perpendicular-line {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 0;
+  transform: rotate(90deg);
+  border-color: red;
+}
+
+ -->
