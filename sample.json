@@ -1,138 +1,106 @@
 {
-    "name": "Sudip Mondal",
-    "summary": "Hi! I’m a software developer, exploring different fields of DevOps and try to contribute to open source.",
-    "email": "ce20b112@smail.iitm.ac.in",
-    "phone": "+91 9126865452",
-    "github": "https://github.com/sudip-mondal-2002",
-    "linkedin": "https://www.linkedin.com/in/sudip-mondal-374a12201/",
-    "twitter": "https://www.linkedin.com/in/sudip-mondal-374a12201/",
-    "website": null,
-    "education": [
-        {
-            "title": "B.Tech Civil Engineering",
-            "institution": "Indian Institute of Technology, Madras",
-            "start": "nov,2020",
-            "end": "present",
-            "score": "3.5/4.0"
-        },
-        {
-            "title": "Senior Secondary",
-            "institution": "R.K.M Vidyapith Deoghar",
-            "start": "jun,2018",
-            "end": "mar,2020",
-            "score": "1.5/4.0"
-        }
-    ],
-    "experience": [
-        {
-            "title": "Web Developer",
-            "workplace": "Logistics and Innovation Lab, IIT Madras",
-            "start": "aug,2021",
-            "end": "present",
-            "skills": [
-                "Web Development",
-                "ReactJs",
-                "Figma"
-            ],
-            "description": "Logistics labs ideates new algorithm and techniques to make the transportation of goods easier. I‘ve created the frontend interfaces as well as worked on integrating the backend to the frontend."
-        },
-        {
-            "title": "Frontend Developer",
-            "workplace": "Prescribe",
-            "start": "nov,2021",
-            "end": "jan,2022",
-            "skills": [
-                "App Development",
-                "Web Development",
-                "React Native"
-            ],
-            "description": "Implemented figma designs on a react native project.Created a styled PDF generator which collects the data from and send as PDF as styled in the figma file."
-        },
-        {
-            "title": "App Developer",
-            "workplace": "Resonect",
-            "start": "jun,2021",
-            "end": "sep,2021",
-            "skills": [
-                "AngularJs",
-                "Ionic",
-                "Figma"
-            ],
-            "description": "Implemented Figma designs to the Resonect app. Also worked on the backend integration for the app."
-        }
-    ],
-    "projects": [
-        {
-            "title": "MonsterMaker",
-            "start": "mar,2020",
-            "end": "present",
-            "skills": [
-                "Game Design",
-                "Figma",
-                "Flutter"
-            ],
-            "description": "MonsterMaker is a collaborative drawing game where players draw “monsters” together. I designed it in Figma, built it with Flutter and Firebase, and released the game on the Appstore and Google Play.",
-            "links": {
-                "github": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
-                "figma": "https://www.figma.com/file/elD7lNvkKL4nENQnzPK0X7/MonsterMaker?node-id=0%3A1",
-                "document": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
-                "video": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
-                "website": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
-                "playstore": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game",
-                "appstore": "https://github.com/Daniel-BD/MonsterMaker-A-Drawing-Game"
+        "name": "Ayush Tiwari",
+        "summary": "Hi! I’m a software developer, exploring different fields of DevOps and try to contribute to open source.",
+        "email": "ce20b112@smail.iitm.ac.in",
+        "phone": "+91 9126865452",
+        "github": "https://github.com/sudip-mondal-2002",
+        "linkedin": "https://www.linkedin.com/in/sudip-mondal-374a12201/",
+        "twitter": "https://twitter.com/SUDIPMO19931261",
+        "website": "https://sudipmondal.tk/",
+        "education": [
+            {
+                "title": "B.Tech Civil Engineering",
+                "institution": "Indian Institute of Technology, Madras",
+                "start": "nov,2020",
+                "end": "present",
+                "score": "7.78"
+            },
+            {
+                "title": "Senior Secondary",
+                "institution": "R.K.M Vidyapith Deoghar",
+                "start": "jun,2018",
+                "end": "mar,2020",
+                "score": "93%"
             }
-        },
-        {
-            "title": "Interactive Polaroids",
-            "start": "feb,2020",
-            "end": "mar,2021",
-            "skills": [
-                "Interaction Design",
-                "Python",
-                "User Research"
-            ],
-            "description": "In a course about Tangible Interactions, I was part of a group that designed and built a novel new way to interact with personal photos. By strengthening the engagement with personal photos, we aimed to provide a rich emotional experience.",
-            "links": {
-                "github": null,
-                "figma": null,
-                "document": "https://drive.google.com/file/d/1c6mUFhkVJ-tu0J-9j2XV7tWilFU1sCk6/view",
-                "video": "https://youtu.be/Vd1cYAiclKA",
-                "website": null,
-                "playstore": null,
-                "appstore": null
+        ],
+        "experience": [
+            {
+                "title": "Web Developer",
+                "workplace": "Logistics and Innovation Lab, IIT Madras",
+                "start": "aug,2021",
+                "end": "present",
+                "skills": [
+                    "Web Development",
+                    "ReactJs",
+                    "Figma"
+                ],
+                "description": "Logistics labs ideates new algorithm and techniques to make the transportation of goods easier. I‘ve created the frontend interfaces as well as worked on integrating the backend to the frontend."
+            },
+            {
+                "title": "Frontend Developer",
+                "workplace": "Prescribe",
+                "start": "nov,2021",
+                "end": "jan,2022",
+                "skills": [
+                    "App Development",
+                    "Web Development",
+                    "React Native"
+                ],
+                "description": "Implemented figma designs on a react native project.Created a styled PDF generator which collects the data from and send as PDF as styled in the figma file."
+            },
+            {
+                "title": "App Developer",
+                "workplace": "Resonect",
+                "start": "jun,2021",
+                "end": "sep,2021",
+                "skills": [
+                    "AngularJs",
+                    "Ionic",
+                    "Figma"
+                ],
+                "description": "Implemented Figma designs to the Resonect app. Also worked on the backend integration for the app."
             }
-        }
-    ],
-    "skills": [
-        "Interaction Design",
-        "UX Deisgn",
-        "Presentation",
-        "Software Design",
-        "Figma",
-        "Flutter",
-        "SwiftUI",
-        "Firebase"
-    ],
-    "accomplishments":[
-        "Finalist, Pravega Hackathon, 2021, organised by IISc, Bangalore",
-        "Finalist, Reverse Coding, 2021, organised by Shaastra, IIT Madras, Chennai",
-        "Finalist, Reverse Coding, 2022, organised by Shaastra, IIT Madras, Chennai",
-        "Finalist, LogicX, 2021, organised by Shaastra, IIT Madras, Chennai",
-        "Finalist, LogicX, 2022, organised by Shaastra, IIT Madras, Chennai",
-        "Participant, SpaceApps challenge, 2021, organised by NASA, Houston, Texas"
-    ],
-    "por":[
-        {
-            "title": "Core member, SOC, IIT Madras",
-            "description": "I am a core member of the Sports organizing Committee, IIT Madras. I am responsible for organizing events, conducting workshops, and mentoring students.",
-            "start": "feb,2020",
-            "end": "mar,2021"
-        },
-        {
-            "title": "GitHub Campus Expert",
-            "description": "I am a GitHub Campus Expert. I am responsible for building and maintaining the GitHub Campus, and for providing technical guidance to students.",
-            "start": "feb,2020",
-            "end": "present"
-        }
-    ]
-}
+        ],
+        "projects": [
+            {
+                "title": "MobilePy",
+                "description": "This is an interpreter for python, which can be used in android set."
+            },
+            {
+                "title": "Shooting 3D",
+                "description": "A single player 3D shooting game with brilliant graphics and animations."
+            }
+        ],
+        "tools": [
+            "Web Development",
+            "App Development",
+            "Machine Learning",
+            "C++",
+            "Python",
+            "Java",
+            "JavaScript",
+            "Teaching"
+        ],
+        "accomplishments": [
+            "Finalist, Pravega Hackathon, 2021, organised by IISc, Bangalore.",
+            "Finalist, Reverse Coding, 2021 and 2022 & LogicX, 2021 and 2022 organised by Shaastra, IIT Madras.",
+            "Participant, SpaceApps challenge, 2021.",
+            "Among top 10 participants in Esolang Contest, 2022, organised by Shaastra, IIT Madras.",
+            "Top performer from IIT Madras in Scalar."
+        ],
+        "por": [
+            {
+                "title": "Core member, SOC, IIT Madras"
+            },
+            {
+                "title": "GitHub Campus Expert"
+            },
+            {
+                "title": "Postman Student Leader"
+            }
+        ],
+        "hobbies": [
+            "Listening to songs",
+            "3D Modelling"
+        ]
+    }
