@@ -38,8 +38,6 @@
 
         .major {
             margin-top: 8px;
-            font-size: 13px;
-            font-weight: 600;
         }
 
         .school {
@@ -307,14 +305,25 @@
         </div>
         <div class="education">
         <div class="education-title">Education</div>
-            {{#each education}}
             <div class="edu-item">
-                <div class="major">{{this.title}}</div>
-                <div class="school">{{this.institution}}</div>
-                <div class="time">{{this.start}} - {{this.end}}</div>
-                <div class="score">{{this.score}}</div>
+                <table>
+                    <tr>
+                        <th>Program</th>
+                        <th>Institution</th>
+                        <th>CGA/Percentage</th>
+                        <th>Year of Completion</th>
+                    </tr>
+                    {{#each education}}
+                    <tr>
+                        <td class="major">{{this.title}}</td>
+                        <td class="school">{{this.institution}}</td>
+                        <td class="time">{{this.start}} - {{this.end}}</td>
+                        <td class="score">{{this.score}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
             </div>
-            {{/each}}
+            
         </div>       
         {{/if}}
             <div>
