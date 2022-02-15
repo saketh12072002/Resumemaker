@@ -1,6 +1,7 @@
 # Output
 *.pdf
 index.js
+template3.html
 
 ### Node ###
 # Logs
